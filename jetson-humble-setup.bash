@@ -255,7 +255,7 @@ cd ..
 cd $HOME/colcon_ws
 log_info "Installing dependencies with rosdep..."
 log_info "  Some dependencies are not available for ${architecture}. Don't panic."
-source /opt/ros/$2/setup.bash
+source /opt/ros/$humble/setup.bash
 for i in $(seq 1 3); do
   log_info "Installing dependencies with rosdep. Attempt $i of 3...."
   if rosdep install --from-paths src --ignore-src -r -y; then
